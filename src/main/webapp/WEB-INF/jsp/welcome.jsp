@@ -1,12 +1,17 @@
-<!doctype html>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<html lang="en">
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
+    <%@ include file="common/meta.jsp" %>
+    <title>Home Page</title>
+    <%@ include file="common/header.jsp" %>
 </head>
-
 <body>
-<div><%="hello for jsp :"%> ${this_time}</div>
+<div class="view">
+    <div class="pages">
+        <h1>H! TAG</h1>
+    </div>
+</div>
+<%@ include file="common/footer.jsp" %>
 </body>
-
 </html>
