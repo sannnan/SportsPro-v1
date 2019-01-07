@@ -13,22 +13,22 @@
             var chart = new CanvasJS.Chart("chartContainer", {
                 theme: "light2", // "light1", "dark1", "dark2"
                 title: {
-                    text: "Room Temperature"
+                    text: "Live Score"
                 },
                 axisX: {
                     title: "Time Elapsed (in seconds)",
                     suffix: " s"
                 },
                 axisY: {
-                    title: "Temperature (in °C)",
+                    title: "Score",
                     includeZero: false,
-                    valueFormatString: "#,##0.0",
-                    suffix: " °C"
+                    valueFormatString: "#,##0",
+                    suffix: " "
                 },
                 data: [{
                     type: "line",
                     xValueFormatString: "After #,##0 s",
-                    yValueFormatString: "#,##0.0 °C",
+                    yValueFormatString: "#,##0",
                     dataPoints: dataPoints
                 }]
             });
