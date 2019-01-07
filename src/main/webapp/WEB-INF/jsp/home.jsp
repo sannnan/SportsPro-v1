@@ -8,6 +8,12 @@
 </head>
 <body>
 <div class="view">
+    <c:if test="${page != null}">
+        <div class="areaChart">
+            <jsp:include page="charts/${page}.jsp" />
+                <%--<jsp:include page="charts/chart.jsp"></jsp:include>--%>
+        </div>
+    </c:if>
 
 </div>
 <%@ include file="common/footer.jsp" %>

@@ -9,29 +9,29 @@
     <script type="text/javascript">
         window.onload = function() {
 
-            var dps = [ [] ];
+            var dps = [[]];
             var chart = new CanvasJS.Chart("chartContainer", {
-                animationEnabled : true,
-                theme : "light2", // "light1", "dark1", "dark2"
-                title : {
-                    text : "Deforestation in Brazilian Amazon"
+                exportEnabled: true,
+                animationEnabled: true,
+                theme: "light2", // "light1", "dark1", "dark2"
+                title: {
+                    text: "Sport Pro v1"
                 },
-                axisY : {
-                    title : "Annual Forest Loss (in sq. km)",
-                    labelFormatter : addSymbols
-                },
-                data : [ {
-                    type : "area",
-                    markerSize : 0,
-                    yValueFormatString : "#,##0 sq. km",
-                    dataPoints : dps[0]
-                } ]
+                subtitles: [{
+                    text: "Age Groups of Visitors"
+                }],
+                data: [{
+                    type: "pie",
+                    yValueFormatString: "#,##0\"%\"",
+                    indexLabel: "{label} - {y}",
+                    dataPoints: dps[0]
+                }]
             });
 
             var yValue;
             var label;
 
-            <c:forEach items="${dataPointsList}" var="dataPoints" varStatus="loop">
+            <c:forEach items="${pieDataPointsList}" var="dataPoints" varStatus="loop">
             <c:forEach items="${dataPoints}" var="dataPoint">
             yValue = parseFloat("${dataPoint.y}");
             label = "${dataPoint.label}";
@@ -43,18 +43,6 @@
             </c:forEach>
 
             chart.render();
-
-            function addSymbols(e) {
-                var suffixes = [ "", "K", "M", "B" ];
-
-                var order = Math.max(
-                    Math.floor(Math.log(e.value) / Math.log(1000)), 0);
-                if (order > suffixes.length - 1)
-                    order = suffixes.length - 1;
-
-                var suffix = suffixes[order];
-                return CanvasJS.formatNumber(e.value / Math.pow(1000, order)) + suffix;
-            }
 
         }
     </script>

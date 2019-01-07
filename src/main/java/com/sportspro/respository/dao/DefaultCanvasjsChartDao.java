@@ -8,6 +8,6 @@ import java.util.Map;
 public class DefaultCanvasjsChartDao implements CanvasjsChartDao {
     @Override
     public List<List<Map<Object, Object>>> getCanvasjsChartData() {
-        return CanvasjsChartData.getCanvasjsDataList();
+        return CanvasjsChartData.getAreaChartData();
     }
 }

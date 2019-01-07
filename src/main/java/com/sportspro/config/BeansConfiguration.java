@@ -1,9 +1,7 @@
 package com.sportspro.config;
 
-import com.sportspro.respository.dao.CanvasjsChartDao;
-import com.sportspro.respository.dao.DefaultCanvasjsChartDao;
-import com.sportspro.services.CanvasjsChartService;
-import com.sportspro.services.DefaultCanvasjsChartService;
+import com.sportspro.respository.dao.*;
+import com.sportspro.services.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -18,4 +16,26 @@ public class BeansConfiguration {
     public CanvasjsChartDao canvasjsChartDao() {
         return new DefaultCanvasjsChartDao();
     }
+
+    @Bean
+    public CanvasjsPieChartService canvasjsPieChartService() {
+        return new DefaultCanvasjsPieChartService();
+    }
+
+    @Bean
+    public CanvasjsPieChartDao canvasjsPieChartDao() {
+        return new DefaultCanvasjsPieChartDao();
+    }
+
+    @Bean
+    public CanvasjsLiveChartService canvasjsLiveChartService() {
+        return new DefaultCanvasjsLiveChartService();
+    }
+
+    @Bean
+    public CanvasjsLiveChartDao canvasjsLiveChartDao() {
+        return new DefaultCanvasjsLiveChartDao();
+    }
+
+
 }
