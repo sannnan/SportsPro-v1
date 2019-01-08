@@ -1,15 +1,15 @@
-package com.sportspro.services;
+package com.sportspro.service;
 
-import com.sportspro.respository.dao.CanvasjsPieChartDao;
+import com.sportspro.respository.dao.CanvasjsChartDao;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 import java.util.Map;
 
-public class DefaultCanvasjsPieChartService implements CanvasjsPieChartService {
+public class DefaultCanvasjsChartService implements CanvasjsChartService {
 
     @Autowired
-    private CanvasjsPieChartDao canvasjsChartDao;
+    private CanvasjsChartDao canvasjsChartDao;
 
 //    public void setCanvasjsChartDao(CanvasjsChartDao canvasjsChartDao) {
 //        this.canvasjsChartDao = canvasjsChartDao;
@@ -17,6 +17,6 @@ public class DefaultCanvasjsPieChartService implements CanvasjsPieChartService {
 
     @Override
     public List<List<Map<Object, Object>>> getCanvasjsChartData() {
-        return canvasjsChartDao.getCanvasjsPieChartData();
+        return canvasjsChartDao.getCanvasjsChartData();
     }
 }

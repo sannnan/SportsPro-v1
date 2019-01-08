@@ -1,6 +1,6 @@
 package com.sportspro.controller;
 
-import com.sportspro.services.CanvasjsLiveChartService;
+import com.sportspro.service.CanvasjsLiveChartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

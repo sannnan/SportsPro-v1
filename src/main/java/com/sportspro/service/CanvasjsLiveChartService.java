@@ -1,4 +1,4 @@
-package com.sportspro.services;
+package com.sportspro.service;
 
 import java.util.List;
 import java.util.Map;

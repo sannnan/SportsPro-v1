@@ -1,4 +1,4 @@
-package com.sportspro.model;
+package com.sportspro.model.entities;
 
 import java.util.Date;
 

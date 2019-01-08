@@ -1,7 +1,7 @@
 package com.sportspro.controller;
 
-import com.sportspro.services.CanvasjsChartService;
-import com.sportspro.services.CanvasjsPieChartService;
+import com.sportspro.service.CanvasjsChartService;
+import com.sportspro.service.CanvasjsPieChartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -17,6 +17,7 @@ public class PieChartController {
     private CanvasjsChartService canvasjsChartService;
     @Autowired
     private CanvasjsPieChartService canvasjsPieChartService;
+
     @GetMapping("/piechart")
     public String charts(ModelMap modelMap) {
         modelMap.addAttribute("page", "piechart");

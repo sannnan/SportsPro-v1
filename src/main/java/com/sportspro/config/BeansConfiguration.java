@@ -1,7 +1,7 @@
 package com.sportspro.config;
 
 import com.sportspro.respository.dao.*;
-import com.sportspro.services.*;
+import com.sportspro.service.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
