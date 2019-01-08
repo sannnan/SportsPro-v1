@@ -1,6 +1,6 @@
 package com.sportspro.service;
 
-import com.sportspro.respository.dao.CanvasjsChartDao;
+import com.sportspro.repository.dao.CanvasjsChartDao;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

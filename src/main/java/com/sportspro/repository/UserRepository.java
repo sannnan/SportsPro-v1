@@ -1,4 +1,4 @@
-package com.sportspro.respository;
+package com.sportspro.repository;
 
 import com.sportspro.model.entities.User;
 import org.springframework.data.repository.CrudRepository;

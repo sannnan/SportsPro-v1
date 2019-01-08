@@ -1,4 +1,4 @@
-package com.sportspro.respository.dao;
+package com.sportspro.repository.dao;
 
 import java.util.List;
 import java.util.Map;

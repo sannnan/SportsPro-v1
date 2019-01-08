@@ -1,6 +1,11 @@
 package com.sportspro.model.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Team {
+    @Id
     private int teamID;
     private String teamName;
     private int playerCount;

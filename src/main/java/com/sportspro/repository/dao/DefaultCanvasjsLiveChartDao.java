@@ -1,4 +1,4 @@
-package com.sportspro.respository.dao;
+package com.sportspro.repository.dao;
 
 import com.sportspro.model.dataModel.CanvasjsLiveChartData;
 
